@@ -1,0 +1,18 @@
+1. Java is machine independent;
+2. JDK And JRE make Java a machine independent language
+3. JEE is for developing server side applications
+4. JDK->-> JRE ->-> JVM
+
+
+Class is a blueprint to create objects;
+
+
+HashSet does not put or get elements in ordered format;
+JDK is a env for developing java software applications
+JRE provides env for java programme on machine
+JVM responsible for executing the Java programme.
+
+Types of comments in Java
+single line comment - //
+Multi-line comment - /*  */
+Description comment - /**  */
