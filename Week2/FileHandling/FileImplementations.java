@@ -1,9 +1,6 @@
 package Week2.FileHandling;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 
 public class FileImplementations {
 
@@ -23,6 +20,8 @@ public class FileImplementations {
             System.out.println(e.getMessage());
         }
         writeIntoFile();
+        System.out.println(file.getAbsolutePath());
+        fileReader();
     }
 
     public static void createFile() throws FileHandlingExceptionsClass {
@@ -51,6 +50,21 @@ public class FileImplementations {
             System.out.println(e.getMessage());
         }finally {
             System.out.println("Finally Block Code");
+        }
+    }
+
+    public static void fileReader(){
+        try{
+            FileReader fR = new FileReader("test.txt");
+            int ch;
+            while ((ch = fR.read()) != -1) {
+                System.out.print((char) ch);
+            }
+            fR.close();
+        } catch (FileNotFoundException e){
+            System.out.println(e.getMessage());
+        } catch (IOException e){
+            System.out.println(e.getMessage());
         }
     }
 }
