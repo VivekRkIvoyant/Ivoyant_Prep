@@ -1,4 +1,4 @@
-package Week2.Collections;
+package Week2.Collections.HashMap;
 
 import java.util.HashMap;
 
@@ -15,6 +15,7 @@ public class MapHash {
         }finally {
             System.out.println("Finally Block Code");
         }
+        printHashMap();
     }
 
     public static void insertIntoHashMap(){
@@ -37,6 +38,12 @@ public class MapHash {
             System.out.println("Element found");
         }
         getTargetFromMap(target,i+1);
+    }
+
+    public static void printHashMap(){
+        for(int i=0;i<map.size();i++){
+            System.out.println("Value: "+map.get(i));
+        }
     }
 }
 
