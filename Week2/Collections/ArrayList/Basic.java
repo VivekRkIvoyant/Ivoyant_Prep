@@ -9,15 +9,15 @@ public class Basic {
     public static ArrayList<Integer> list = new ArrayList<>();
 
     public static void main(String[] args) {
-//        insertIntoList();
-//        sortElements();
-//        printListElements();
-//        System.out.println(containsElement(10));
-//        System.out.println(containsElement(20));
-//        removeElement(10);
-//        System.out.println(containsElement(10));
-//        insertIntoIndex(1,1000);
-//        System.out.println(list);
+        insertIntoList();
+        sortElements();
+        printListElements();
+        System.out.println(containsElement(10));
+        System.out.println(containsElement(20));
+        removeElement(10);
+        System.out.println(containsElement(10));
+        insertIntoIndex(1,1000);
+        System.out.println(list);
         replaceElements();
     }
 
@@ -60,9 +60,6 @@ public class Basic {
         l.set(1,100);
         System.out.println(l);
     }
-
-
-
 
 }
 
