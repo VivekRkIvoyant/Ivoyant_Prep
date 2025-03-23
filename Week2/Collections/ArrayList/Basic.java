@@ -60,7 +60,4 @@ public class Basic {
         l.set(1,100);
         System.out.println(l);
     }
-
 }
-
-
