@@ -30,8 +30,6 @@ public class Basic extends Thread{
             System.out.println(e.getMessage());
         }
     }
-
-
 //    Demon Threads are threads that run in background
 //    JVM dose'nt wait to demon threads to get their execution completed
 }

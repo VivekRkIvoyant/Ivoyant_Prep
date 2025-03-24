@@ -9,7 +9,7 @@ public class Counter extends Thread{
         }
     }
 
-    private int count=0;
+    private int count = 0;
 
     public synchronized void increment(){
         count++;
