@@ -23,6 +23,7 @@ public class Person {
         arr.add(p2);
         arr.add(p3);
         removeElement(arr,"gobi");
+        addElementAtIndex(arr,0);
         for(Person p:arr){
             System.out.println(p.rollNumber+" "+p.userName);
         }
@@ -32,5 +33,9 @@ public class Person {
 
     public static void removeElement(ArrayList<Person>arr,String name){
         arr.removeIf(p -> p.userName.equals(name));
+    }
+
+    public static void addElementAtIndex(ArrayList<Person> arr,int i){
+        arr.add(i,new Person(121,"Darshan"));
     }
 }
