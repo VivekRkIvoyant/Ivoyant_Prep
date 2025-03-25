@@ -7,7 +7,7 @@ import java.util.concurrent.locks.ReentrantLock;
 public class BankAccount {
 
     private int balance = 200;
-    private Lock lock = new ReentrantLock();
+    private final Lock lock = new ReentrantLock();
 
     public synchronized void withdraw(int amt){
         System.out.println(Thread.currentThread().getName()+" attempting to withdraw: "+amt);
@@ -52,5 +52,3 @@ public class BankAccount {
         }
     }
 }
-
-
