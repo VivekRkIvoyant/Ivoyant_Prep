@@ -5,7 +5,7 @@ import java.util.concurrent.locks.ReentrantLock;
 
 public class UnfairLock implements Runnable {
 
-    private final Lock lock = new ReentrantLock();
+    private final Lock lock = new ReentrantLock(true);
 
     public void accessResources(){
         lock.lock();
