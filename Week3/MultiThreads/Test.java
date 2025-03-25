@@ -8,7 +8,7 @@ public class Test {
         Runnable task = new Runnable() {
             @Override
             public void run() {
-                bankAccount.withdraw(50);
+                bankAccount.withDrawAmount(50);
             }
         };
         Thread t1 = new Thread(task);
@@ -17,4 +17,3 @@ public class Test {
         t2.start();
     }
 }
-
