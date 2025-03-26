@@ -1,0 +1,5 @@
+Spring makes developing Java applications easy:
+As it contains : AOP (Aspect Oriented Programming)
+                 DI (Dependency Injection)
+                 POJO (Plain Old Java Objects)
+
