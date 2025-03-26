@@ -42,7 +42,7 @@ public class DynamicInput {
             con.close();
 
         } catch (ClassNotFoundException | SQLException | IOException e) {
-            throw new RuntimeException(e);
+            System.out.println(e.getMessage());
         }
     }
 }
