@@ -13,3 +13,4 @@ example for bean life cycle:
 3. Bean Initialized - Connection to database is established
 4. Make use of Bean - All the transaction to the database can be done during this phase
 5. Destruction Phase - connection is closed and bean is destroyed
+6. At last the bean gets destroyed
