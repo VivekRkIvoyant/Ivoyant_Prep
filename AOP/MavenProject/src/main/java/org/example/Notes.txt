@@ -1,0 +1,10 @@
+Spring Ioc Can be implemented using following ways of configurations:
+1. XML Class Path Based Configuration
+2. Java Based configuration (@Configuration and @Bean)
+3. Annotation Based Configuration (@ComponentScan , @Component , @Autowired)
+
+
+Spring simplifies object creation using:
+ Inversion of Control(Ioc)
+ BeanFactory by Dependency Injection
+

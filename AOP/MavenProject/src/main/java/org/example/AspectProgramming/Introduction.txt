@@ -1,0 +1,11 @@
+Aspect Oriented Programming handles cross-cutting concerns
+
+There are 5 types of advice:
+1. Before
+2. After
+3. After Returning
+4. After Exception Thrown
+5. Around
+
+
+It is a way to separate common functionality like logging , security and transactions from business logic.

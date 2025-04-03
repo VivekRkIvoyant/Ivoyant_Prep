@@ -1,0 +1,17 @@
+Life Cycle of beans:
+
+1. Instantiation of beans - Spring Container creates the instance of the bean
+2. Dependency Injection - Dependency are injected into the bean
+3. Initializing the bean - (maybe connection to database)
+4. Bean usage - bean is ready to be used
+5. Clean Up methods run - database connection closing
+6. Bean Destruction - when application context is closed , bean is destroyed
+
+
+example for bean life cycle:
+
+1. Spring creates the object of DataBase connection
+2. Dependency Injection   - getting dependencies from database URL , username and password class
+3. Bean Initialized - Connection to database is established
+4. Make use of Bean - All the transaction to the database can be done during this phase
+5. Destruction Phase - connection is closed and bean is destroyed
