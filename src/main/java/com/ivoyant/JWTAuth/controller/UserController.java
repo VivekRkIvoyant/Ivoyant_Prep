@@ -65,14 +65,6 @@ public class UserController {
         return new ResponseEntity<>(user,HttpStatus.FOUND);
     }
 
-    @GetMapping("/getAll")
-    public ResponseEntity<List<AppUsers>> getAllUsers(){
-        List<AppUsers> appUsers = appUserService.findAllUsers();
-        if(appUsers.isEmpty()){
-            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
-        }
-        return new ResponseEntity<>(appUsers,HttpStatus.FOUND);
-    }
 
     @DeleteMapping("/{id}")
     public void deleteUsingId(Long id){

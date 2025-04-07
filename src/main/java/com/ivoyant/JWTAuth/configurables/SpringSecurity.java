@@ -32,6 +32,7 @@ public class SpringSecurity {
                     .csrf(AbstractHttpConfigurer::disable)
                     .authorizeHttpRequests(auth -> auth
                             .requestMatchers("/api/users/signup", "/api/users/login").permitAll()
+                            .requestMatchers("/api/admin/**").hasRole("ADMIN")
                             .anyRequest().authenticated()
                     )
                     .formLogin(AbstractHttpConfigurer::disable)
